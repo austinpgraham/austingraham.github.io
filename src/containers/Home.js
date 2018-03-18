@@ -1,28 +1,41 @@
 import React, { Component } from 'react';
-import CircularPic from '../components/CircularPic';
-import HeaderText from '../components/text/HeaderText';
+import HomeMenu from './menus/HomeMenu';
+import Header from './Header';
+import SubHeaderText from '../components/text/SubHeaderText';
 
 class Home extends Component {
     render() {
         return (
-            <div className="home" style={styles.homePage}>
-                <CircularPic path="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/22008474_1681911668487715_6843686677601592007_n.jpg?oh=a3e8df9a39fa6396892664a48b86ec57&oe=5B46A988" alt="Uh-oh!"/>
-                <HeaderText text="Austin Graham"/>
+            <div className="home-page" style={styles.page}>
+                <Header />
+                <div className="inner-container" style={styles.inner}>
+                    <HomeMenu />
+                    <SubHeaderText text="About"/>
+                </div>
             </div>
         );
     }
 }
 
 var styles = {
-    homePage: {
+    page: {
+        backgroundColor: 'rgb(139,0,0)',
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+    },
+    inner: {
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'rgb(139,0,0)',
-        height: 400,
+        backgroundColor: 'white',
+        marginLeft: 100,
+        marginRight: 100,
+        border: '1px solid black',
         borderRadius: 10,
-        border: '1px solid black'
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 }
 
