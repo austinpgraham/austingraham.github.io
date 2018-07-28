@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <div className="header" style={styles.header}>
-                <CircularPic path="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/22008474_1681911668487715_6843686677601592007_n.jpg?oh=a3e8df9a39fa6396892664a48b86ec57&oe=5B46A988" alt="Uh-oh!"/>
+                <CircularPic path="https://scontent.ftul1-1.fna.fbcdn.net/v/t1.0-9/22008474_1681911668487715_6843686677601592007_n.jpg?_nc_cat=0&oh=790923506ade07e72376439a0f202656&oe=5C0C6A88" alt="Uh-oh!"/>
                 <HeaderText text="Austin Graham"/>
             </div>
         );
